@@ -84,6 +84,10 @@ With a test statistic of -2.5861 and a p-value of 0.0959, we **fail to reject th
 
 A higher p-value (greater than 0.05) indicates that we fail to reject the null hypothesis, meaning we cannot conclude with strong evidence that the series is stationary. In this case, further steps might be required to make the series stationary before proceeding with certain types of analysis.
 
+## Forecasting for next n days from jan1 2024 (say 14 days) using ARIMA
+![](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/arima_for_n_days.png)
+
+
 
 ## Overview
 
@@ -97,9 +101,7 @@ A moving average plot is generated to smooth out fluctuations in the time series
 
 Time series decomposition is performed to separate the data into its trend, seasonality, and residual components. This helps in understanding the various contributing factors to the overall pattern.
 
-### ARIMA Model Prediction
 
-An ARIMA (AutoRegressive Integrated Moving Average) model is utilized for time series prediction. The model parameters are tuned to achieve the best possible forecasting accuracy.
 
 ### XGBoost Forecasting
 
@@ -117,5 +119,11 @@ A model is implemented to find the optimal portfolio value based on the given ti
 
 QuantRocket Zipline is used for efficient data extraction, allowing seamless integration of financial data into the analysis.
 
-## Usage
+## GOOGLE COLAB LINK
+You can find the visualizations and other plots in this link
+[Click here for Google colab file](https://colab.research.google.com/drive/1MmX-zYitCwlZABgCpxSLmU72MqVrq7sW?usp=sharing)  
+
+
+
+
 
