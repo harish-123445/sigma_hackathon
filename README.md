@@ -51,10 +51,23 @@ Bull  0.125000 |  0.678571 |  0.196429
 
 #### VISUALIZATIONS
 - Moving Average Plot
+
+![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/moving_average.png)
+
 - Time Series Decomposition
+![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/decomposition.png)
+
 - ARIMA Model Prediction
+![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/arima.png)
+
 - XGBoost Forecasting
+![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/XGboost%20forecasting.png)
+
+- Differenced Time series
+![Moving Average Plot]()
+
 - ADFuller Test
+
 
 
 ## Overview
