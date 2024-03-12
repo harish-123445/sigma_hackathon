@@ -6,9 +6,48 @@ This QuantRocket project retrieves and analyzes daily Apple (AAPL) stock data fo
 
 #### ANALYSIS AND MODEL BUILDING
 This project focuses on the analysis and forecasting of time series data using various techniques. The main features implemented in the project include:
-
-- Model for Finding the Optimal Portfolio Value
 - Data Extraction using Quantrocket
+```python
+import pandas as pd
+from quantrocket.history import get_prices
+
+# Define parameters for data extraction
+sids = 'FIBBG000B9XRY4'
+start_date = '2023-01-01'
+end_date = '2023-12-31'
+data_frequency = 'daily'
+fields = 'Close'
+
+# Get historical prices using QuantRocket Zipline
+data = get_prices("usstock-free-1min",
+                  data_frequency=data_frequency,
+                  sids=sids,
+                  start_date=start_date,
+                  end_date=end_date,
+                  fields=fields)
+
+# Display the extracted data
+print(data.head())
+```
+
+- Output of Model for Finding the Optimal Portfolio Value and Transition Probability
+  ### Portfolio Analysis Results
+
+```python
+Final Portfolio Value: 17
+
+Optimal Buy Indices: 
+[6, 8, 12, 16, 21, 28, 30, 33, 36, 39, 41, 45, 50, 52, 57, 59, 61, 64, 66, 69, 79, 85, 88, 94, 97, 100,
+ 103, 108, 110, 113, 117, 120, 123, 128, 133, 136, 142, 145, 147, 154, 156, 160, 164, 169, 173, 177, 179,
+ 183, 187, 191, 196, 201, 204, 207, 209, 212, 216, 218, 232, 234, 236, 238, 243]
+
+Transition Matrix:
+         Bear  |   Flat    |     Bull
+Bear  0.138889 |  0.722222 |  0.138889
+Flat  0.146497 |  0.598726 |  0.254777
+Bull  0.125000 |  0.678571 |  0.196429
+```
+
 
 #### VISUALIZATIONS
 - Moving Average Plot
