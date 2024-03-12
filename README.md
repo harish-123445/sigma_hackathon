@@ -64,15 +64,30 @@ Bull  0.125000 |  0.678571 |  0.196429
 ![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/XGboost%20forecasting.png)
 
 - Differenced Time series
-![Moving Average Plot]()
+![Moving Average Plot](https://github.com/harish-123445/sigma_hackathon/blob/main/Output/differenced.png)
 
 - ADFuller Test
+## Stationarity Test Results
 
+The Augmented Dickey-Fuller (ADF) test was conducted to assess the stationarity of the time series. Here are the results:
+
+| Statistic | Value |
+|---|---|
+| Test Statistic | -2.5861 |
+| p-value | 0.0959 |
+
+**Interpretation:**
+
+With a test statistic of -2.5861 and a p-value of 0.0959, we **fail to reject the null hypothesis** of non-stationarity at the 5% significance level. This suggests that the time series is likely **non-stationary**.
+
+**Note:**
+
+A higher p-value (greater than 0.05) indicates that we fail to reject the null hypothesis, meaning we cannot conclude with strong evidence that the series is stationary. In this case, further steps might be required to make the series stationary before proceeding with certain types of analysis.
 
 
 ## Overview
 
-The analysis is conducted in a Jupyter Notebook (`project.ipynb`) and covers a comprehensive exploration of time series data. The main steps and findings are summarized below.
+The analysis is conducted in a Jupyter Notebook (`sigma-forecasting_and_model.ipynb`) and covers a comprehensive exploration of time series data. The main steps and findings are summarized below.
 
 ### Moving Average Plot
 
@@ -104,7 +119,3 @@ QuantRocket Zipline is used for efficient data extraction, allowing seamless int
 
 ## Usage
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/timeseries-analysis-project.git
