@@ -123,6 +123,42 @@ QuantRocket Zipline is used for efficient data extraction, allowing seamless int
 You can find the visualizations and other plots in this link
 [Click here for Google colab file](https://colab.research.google.com/drive/1MmX-zYitCwlZABgCpxSLmU72MqVrq7sW?usp=sharing)  
 
+### Forecasted Values for the Next 14 Days
+
+These are the forecasted stock prices for the next 14 days based on the ARIMA model. The table below provides the day index and the corresponding forecasted values.
+
+| Day | Forecasted Value |
+|-----|-------------------|
+| 250 | 192.425871        |
+| 251 | 192.477162        |
+| 252 | 192.451898        |
+| 253 | 192.464342        |
+| 254 | 192.458212        |
+| 255 | 192.461232        |
+| 256 | 192.459744        |
+| 257 | 192.460477        |
+| 258 | 192.460116        |
+| 259 | 192.460294        |
+| 260 | 192.460206        |
+| 261 | 192.460249        |
+| 262 | 192.460228        |
+| 263 | 192.460239        |
+
+### Conclusion
+
+In this project, we utilized time series analysis techniques, specifically the ARIMA model, to forecast the stock prices of Apple for the next 14 days. The analysis involved loading historical stock price data for the year 2023, fitting an ARIMA model, and visualizing both the historical and forecasted stock prices.
+
+#### Key Results:
+- **Forecasted Values:** The table above provides the forecasted stock prices for the next 14 days, starting from day 250 onwards.
+
+- **Interactive Plot:** The interactive plot showcases the historical stock prices and the forecasted values in an easy-to-understand visual format.
+- **Optimized portfolio values** - the plots and transition probability matrices shows the optimized buy indices and portfolio values
+
+This project serves as a starting point for time series forecasting and can be extended with more sophisticated models, feature engineering, and additional data sources. Feel free to explore and adapt the code to suit your specific needs.
+
+Thank you for exploring this time series forecasting project!
+
+
 
 
 
